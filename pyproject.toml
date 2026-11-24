@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onyon"
+version = "1.0.0"
+description = "syvox + onion → another onion, always the same for the same pair"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["tor", "onion", "ed25519", "band80", "deterministic"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Topic :: Security :: Cryptography",
+]
+
+[project.scripts]
+onyon = "onyon:main"
+
+[tool.setuptools]
+py-modules = ["onyon"]
